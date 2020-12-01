@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>개인 프로젝트</title>
+    <link rel="stylesheet" href="https://use.typekit.net/gye7atl.css">
+  </head>
+
+  <style>
+    html {height: 100%;}
+    body {height: 100%;
+      padding: 0;
+      margin: 0;}
+    a{ text-decoration: none; color: #000; }
+    ol, ul {list-style: none;}
+    header {width: 100%;}
+
+
+    .header {width: 1500px;
+      height: 180px;
+      margin: 0px auto;
+      box-sizing: border-box;
+      padding: 30px 0px 0px;}
+    .header .inner {height: 100%;
+      position: relative;}
+    .header h1 {background: url(logo.png) no-repeat;
+      background-size: cover;
+      width: 350px;
+      height: 100%;
+      font-size: 40px;
+      font-style: italic;
+      font-family: fantasy;
+      position: absolute;
+      margin: 0px;
+  	  cursor: pointer;}
+    .header .nav {text-align: right;
+      height: 100px;}
+    .header .nav ul {height: 100%;
+      position: absolute;
+      right: 0;
+      margin: 0px;}
+    .header .nav ul:after {content: "";
+      display: block;
+      clear: both;}
+    .header .nav li {height: 100%;
+      float: left;
+      padding: 0 25px;
+      font-size: 20px;
+      line-height: 180px;
+      text-align: left;
+  	  font-family: futura-pt-condensed, sans-serif;
+	  font-weight: 700;
+	  font-style: italic;}
+    .header .nav li:nth-child(1) {width: 125px;}
+    .header .nav li:nth-child(2) {width: 180px;}
+    .header .nav li:nth-child(3) {width: 180px;}
+    .header .nav li:nth-child(4) {width: 120px;}
+    .header .nav a {color: #999;
+      font-size: 25px;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      padding-left: 5px;}
+    .header .nav .active {color: black;}
+    .main .section {width: 1500px;
+      height: 780px;
+      background-color: white;
+      margin: 0px auto;
+      overflow: hidden;
+      position: relative;}
+    .main .section ul {margin:0;
+      padding: 0;}
+    .main .section ul:after {content: '';
+      display: block;
+      clear: both;}
+    .main .section li {float: left;
+      width: 50%;
+      height: 780px;
+      box-sizing: border-box;
+      position: relative;}
+    .main .section .page1_left_front {position: absolute;
+      left: 60px;
+      background: url(page1_front.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      animation: motion 1s linear 0s infinite alternate;}
+    @keyframes motion {0% {top: 0px;}
+	    100% {top: 40px;}}
+    .main .section .page1_left_back {background: url(page1_background.png) no-repeat;
+      background-size: cover;
+      height: 100%;}
+    .main .section .page1_right_title1 {background: url(page1_title1.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 70px;
+      width: 350px;
+      margin-top: 150px;
+      margin-left: 70px;}
+    .main .section .page1_right_title2 {background: url(page1_title2.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 70px;
+      width: 600px;
+      margin-left: 70px;}
+    .main .section .page1_right_content {color: #9C9BAF;
+      margin-top: 50px;
+      margin-left: 180px;
+      font-size: 18px;
+      line-height: 32px;}
+    .main .section .page1_right_content strong {color: #FF6316;
+      text-decoration: underline;
+      cursor: pointer;}
+    .main .section .page1_button {color: white;
+      background-color: #999999;
+      font-size: 35px;
+      font-weight: bold;
+      width: 270px;
+      height: 35px;
+      line-height: 35px;
+      margin-top: 80px;
+      margin-left: 0px;
+      cursor: pointer;}
+  </style>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="inner">
+          <h1></h1>
+          <div class="nav">
+            <ul>
+              <li><a class="mainMenu menu1 active">INTRO</a></li>
+              <li><a class="mainMenu menu2">BACKGROUND</a></li>
+              <li><a class="mainMenu menu3">SNEAKERHEAD</a></li>
+              <li><a class="mainMenu menu4">OUTRO</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <section class="section">
+              <ul>
+                <li>
+                  <div class="page1_left_front">
+                  </div>
+                  <div class="page1_left_back">
+                  </div>
+                </li>
+                <li>
+                  <div class="page1_right_title1">
+                  </div>
+                  <div class="page1_right_title2">
+                  </div>
+                  <div class="page1_right_content">
+                    1985년 이탈리아에서 개최된 평가전에서 마이클 조던은<br/>
+                    슬램 덩크로 골대 뒤 유리판, 즉 <strong id="strongEl1">백보드를 산산조각</strong>냈습니다.<br/>
+                    당시 마이클 조던이 착용한 유니폼 컬러에 기반한<br/>
+                    에어 조던 1 '섀터드 백보드' 시리즈는 이 사건을 기념합니다.
+                  <div id="page1_btn" class="page1_button">
+                    BUY 199,000
+                  </div>
+                </li>
+              </ul>
+            </div>
+</html>
